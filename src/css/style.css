@@ -30,17 +30,28 @@
   color: #2196f3;
 }
 
+.card-title {
+  line-height: 200%;
+}
+
+.card-text {
+  line-height: 187%;
+}
+
+.cap-title {
+  line-height: 136%;
+  color: #fff;
+  font-size: 44px;
+}
+
 .cap-button {
   background-color: #2196f3;
   font-size: 16px;
   color: #ffffff;
+  line-height: 187%;
 }
 .cap-block {
   background-color: #2f303a;
-}
-.cap-block h2 {
-  color: #fff;
-  font-size: 44px;
 }
 
 .features {
@@ -50,22 +61,23 @@
 .features p {
   color: #757575;
   font-size: 14px;
+  line-height: 171%;
 }
 
 .whatwedo {
   color: #212121;
 }
 
-.whatwedo h2 {
+.whatwedo-title {
   color: #212121;
-  font-size: 36;
+  font-size: 36px;
 }
 
 .team {
   color: #212121;
 }
 
-.team h2 {
+.team-title {
   font-size: 26px;
 }
 .team-position {
@@ -76,7 +88,7 @@
 }
 .team-card {
   color: #212121;
-  font-size: 16;
+  font-size: 16px;
 }
 
 footer {
@@ -89,6 +101,7 @@ footer a {
 
 .footer-contact {
   color: #ffffff;
+  line-height: 171%;
 }
 
 /* font */
