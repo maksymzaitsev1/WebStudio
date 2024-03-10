@@ -22,13 +22,13 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo" href="/"
+      <a href="#" class="logo" href="#"
         ><img src="./src/img/logo.svg" alt="WebStudio"
       /></a>
       <nav class="header-nav">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a class="nav-link" href="/">Студія</a>
+            <a class="nav-link" href="#">Студія</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./src/pages/portfolio.html">Портфоліо</a>
@@ -37,67 +37,71 @@
             <a class="nav-link" href="#">Контакти</a>
           </li>
         </ul>
-        <ul class="nav-contact">
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
       </nav>
+      <ul class="header-contact">
+        <li class="header-contact-item">
+          <a class="header-contact-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="header-contact-item">
+          <a class="header-contact-link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
     </header>
     <main class="main">
-      <section class="main-cap">
-        <div class="cap-block">
-          <h2 class="cap-title">Ефективні рішення для вашого бізнесу</h2>
-          <button class="cap-button">Замовити послугу</button>
-        </div>
+      <section class="hero">
+        <h2 class="hero-title">Ефективні рішення для вашого бізнесу</h2>
+        <button class="hero-button">Замовити послугу</button>
       </section>
       <section class="features">
-        <div class="features-cards">
-          <ul class="cards-all">
-            <li class="cards-list">
-              <h3 class="cards-title">Увага до деталей</h3>
-              <p class="cards-text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
-            <li class="cards-list">
-              <h3 class="cards-title">Пунктуальність</h3>
-              <p class="cards-text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </li>
-            <li class="cards-list">
-              <h3 class="cards-title">Планування</h3>
-              <p class="cards-text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="cards-list">
-              <h3 class="cards-title">Сучасні технології</h3>
-              <p class="cards-text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
-          </ul>
-        </div>
+        <ul class="features-list">
+          <li class="features-item">
+            <h3 class="features-title">Увага до деталей</h3>
+            <p class="features-text">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title">Пунктуальність</h3>
+            <p class="features-text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title">Планування</h3>
+            <p class="features-text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title">Сучасні технології</h3>
+            <p class="features-text">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
       </section>
-      <section class="whatwedo">
-        <h2 class="whatwedo-title">Чим ми займаємося</h2>
-        <div class="whatwedo-picture">
-          <img src="./src/img/studio/tablet.jpg" alt="Десктопний комп'ютер" />
+      <section class="work">
+        <h2 class="work-title">Чим ми займаємося</h2>
+        <div class="work-pictures">
           <img
+            class="work-img"
+            src="./src/img/studio/tablet.jpg"
+            alt="Десктопний комп'ютер"
+          />
+          <img
+            class="work-img"
             src="./src/img/studio/mobile-phone.jpg"
             alt="Мобільний телефон"
           />
           <img
+            class="work-img"
             src="./src/img/studio/design-solutions.jpg"
             alt="Дизайнерські рішення"
           />
@@ -105,53 +109,59 @@
       </section>
       <section class="team">
         <h2 class="team-title">Наша команда</h2>
-        <div class="team-worker">
-          <article class="team-card">
+        <div class="team-workers">
+          <article class="team-worker">
             <img
               src="./src/img/studio/ihor-demyanenko.jpg"
               alt="Product Designer"
             />
-            <p class="team-name">Ігор Дем.яненко</p>
-            <p class="team-position">Product Designer</p>
+            <p class="worker-name">Ігор Дем.яненко</p>
+            <p class="worker-position">Product Designer</p>
           </article>
-          <article class="team-card">
+          <article class="team-worker">
             <img
               src="./src/img/studio/olga-repina.jpg"
               alt="Frontend Developer"
             />
-            <p class="team-name">Ольга Рєпіна</p>
-            <p class="team-position">Frontend Developer</p>
+            <p class="worker-name">Ольга Рєпіна</p>
+            <p class="worker-position">Frontend Developer</p>
           </article>
-          <article class="team-card">
+          <article class="worker-card">
             <img src="./src/img/studio/mykola-tarasov.jpg" alt="Marketing" />
-            <p class="team-name">Микола Тарасов</p>
-            <p class="team-position">Marketing</p>
+            <p class="worker-name">Микола Тарасов</p>
+            <p class="worker-position">Marketing</p>
           </article>
-          <article class="team-card">
+          <article class="worker-card">
             <img
               src="./src/img/studio/mykhailo-yermakov.jpg"
               alt="UI Designer"
             />
-            <p class="team-name">Михайло Єрмаков</p>
-            <p class="team-position">UI Designer</p>
+            <p class="worker-name">Михайло Єрмаков</p>
+            <p class="worker-position">UI Designer</p>
           </article>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <a href="/"
+      <a href="#"
         ><img class="logo" src="./src/img/logo.svg" alt="WebStudio"
       /></a>
       <div class="footer-contact">
         <ul class="contact-info">
-          <li class="contact-address">
-            <address>м. Київ, пр-т Лесі Українки, 26</address>
+          <li class="contact-item">
+            <address class="contact-address">
+              м. Київ, пр-т Лесі Українки, 26
+            </address>
           </li>
-          <li class="contact-email">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="contact-item">
+            <a class="contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="contact-tel">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="contact-item">
+            <a class="contact-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
