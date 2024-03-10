@@ -1,0 +1,7 @@
+:root {
+  --colorBackgroundPrimary: #2f303a;
+  --colorTextPrimary: #212121;
+}
+.list {
+  background-color: var(--colorBackgroundPrimary);
+}
