@@ -1,46 +1,87 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
 :root {
   --colorBackgroundPrimary: #2f303a;
   --colorTextPrimary: #212121;
+  --colorTextPrimary: #757575;
+  --colorTextPrimary: #ffffff;
+  --colorBackgroundPrimary: #f5f4fa;
+  --colorBackgroundPrimary: #eeeeee;
+  --colorBackgroundPrimary: #2196f3;
 }
 .list {
   background-color: var(--colorBackgroundPrimary);
 }
-
+.logo {
+  font-weight: bold;
+  font-size: 26px;
+}
 .header {
   font-weight: medium;
+  font-size: 14px;
+}
+.hero-button {
+  font-size: 16px;
+  font-weight: bold;
 }
 .features-title {
   font-weight: bold;
+  font-size: 14px;
 }
 .features-text {
   font-weight: regular;
+  line-height: 1.71;
+  font-size: 14px;
 }
 .work-title {
   font-weight: bold;
+  font-size: 36px;
 }
 .hero-title {
   font-weight: black;
+  line-height: 1.36;
+  font-size: 44px;
 }
 .team-title {
   font-weight: bold;
+  font-size: 36px;
 }
 .worker-name {
   font-weight: medium;
+  font-size: 16px;
 }
 .worker-position {
   font-weight: regular;
+  font-size: 16px;
 }
 .footer {
   font-weight: regular;
 }
-.portfolio-title {
-  font-weight: bold;
-}
 .portfolio-text {
   font-weight: regular;
+  font-weight: bold;
+  line-height: 1.87;
+  font-size: 16px;
 }
-.portfolio-text {
+.portfolio-title {
+  font-weight: bold;
+  line-height: 2;
+  font-size: 18px;
+}
+.portfolio-filter {
   font-weight: medium;
+  line-height: 1.62;
+  font-size: 16px;
+}
+.contact-item {
+  line-height: 1.71;
+  font-size: 14px;
+}
+.contact-adress {
+  font-size: 14px;
 }
 
 .roboto-regular {
