@@ -6,11 +6,11 @@ body {
 :root {
   --colorBackgroundPrimary: #2f303a;
   --colorTextPrimary: #212121;
-  --colorTextPrimary: #757575;
-  --colorTextPrimary: #ffffff;
-  --colorBackgroundPrimary: #f5f4fa;
-  --colorBackgroundPrimary: #eeeeee;
-  --colorBackgroundPrimary: #2196f3;
+  --colorTextSecondary: #757575;
+  --colorTextTertiary: #ffffff;
+  --colorBackgroundSecondary: #f5f4fa;
+  --colorTextAdditional: #eeeeee;
+  --colorHover: #2196f3;
 }
 .list {
   background-color: var(--colorBackgroundPrimary);
