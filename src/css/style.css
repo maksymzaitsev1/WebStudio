@@ -22,54 +22,71 @@ body {
 .hero-button {
   font-size: 16px;
   font-weight: 700;
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.header-contact-link {
+  color: #757575;
 }
 .features-title {
   font-weight: 700;
   font-size: 14px;
+  color: #212121;
 }
 .features-text {
   font-weight: 400;
   line-height: 1.71;
   font-size: 14px;
+  color: #757575;
 }
 .work-title {
   font-weight: 700;
   font-size: 36px;
+  color: #212121;
 }
 .hero-title {
   font-weight: 900;
   line-height: 1.36;
   font-size: 44px;
+  color: #ffffff;
 }
 .team-title {
   font-weight: 700;
   font-size: 36px;
+  color: #212121;
 }
 .worker-name {
   font-weight: 500;
   font-size: 16px;
+  color: #212121;
 }
 .worker-position {
   font-weight: 400;
   font-size: 16px;
+  color: #757575;
 }
 .footer {
   font-weight: 400;
+  background-color: #2f303a;
+  color: #ffffff;
 }
 .portfolio-text {
   font-weight: 400;
   line-height: 1.87;
   font-size: 16px;
+  color: #757575;
 }
 .portfolio-title {
   font-weight: 700;
   line-height: 2;
   font-size: 18px;
+  color: #212121;
 }
 .portfolio-filter {
   font-weight: 500;
   line-height: 1.62;
   font-size: 16px;
+  color: #212121;
 }
 .contact-item {
   line-height: 1.71;
@@ -77,6 +94,12 @@ body {
 }
 .contact-adress {
   font-size: 14px;
+}
+.hero {
+  background-color: #2f303a;
+}
+.nav-link {
+  color: #212121;
 }
 
 .roboto-regular {
