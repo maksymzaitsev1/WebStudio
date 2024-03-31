@@ -3,18 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <a href="../../index.html" class="logo"
           ><img src="../img/logo.svg" alt="WebStudio"
         /></a>
@@ -30,19 +43,19 @@
               <a class="nav-link" href="#">Контакти</a>
             </li>
           </ul>
-          <ul class="header-contact">
-            <li class="header-contact-item">
-              <a class="header-contact-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="header-contact-item">
-              <a class="header-contact-link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </nav>
+        <ul class="header-contact">
+          <li class="header-contact-item">
+            <a class="header-contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact-item">
+            <a class="header-contact-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main class="main">
@@ -65,87 +78,89 @@
               <button class="portfolio-filter">Маркетинг</button>
             </li>
           </ul>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/tekhnokryak.jpg"
-              alt="Технокряк"
-            />
-            <h2 class="portfolio-title">Технокряк</h2>
-            <p class="portfolio-text">Веб-сайт</p>
-          </article>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/poster.jpg"
-              alt="Постер New Orlean vs Golden Star"
-            />
-            <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-            <p class="portfolio-text">Дизайн</p>
-          </article>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/restoraunt.jpg"
-              alt="Ресторан Seafood"
-            />
-            <h2 class="portfolio-title">Ресторан Seafood</h2>
-            <p class="portfolio-text">Додаток</p>
-          </article>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/project.jpg"
-              alt="Проєкт Prime"
-            />
-            <h2 class="portfolio-title">Проект Prime</h2>
-            <p class="portfolio-text">Маркетинг</p>
-          </article>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/boxes.jpg"
-              alt="Проєкт Boxes"
-            />
-            <h2 class="portfolio-title">Проєкт Boxes</h2>
-            <p class="portfolio-text">Додаток</p>
-          </article>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/inspiration.jpg"
-              alt="Inspiration has no Borders"
-            />
-            <h2 class="portfolio-title">Inspiration has no Borders</h2>
-            <p class="portfolio-text">Веб-сайт</p>
-          </article>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/limited.jpg"
-              alt="Видання Limited Edition"
-            />
-            <h2 class="portfolio-title">Видання Limited Edition</h2>
-            <p class="portfolio-text">Дизайн</p>
-          </article>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/lab.jpg"
-              alt="Проєкт LAB"
-            />
-            <h2 class="portfolio-title">Проєкт LAB</h2>
-            <p class="portfolio-text">Маркетинг</p>
-          </article>
-          <article class="portfolio-info">
-            <img
-              class="portfolio-picture"
-              src="../img/portfolio/growing.jpg"
-              alt="Growing Business"
-            />
-            <h2 class="portfolio-title">Growing Business</h2>
-            <p class="portfolio-text">Додаток</p>
-          </article>
+          <div class="portfolio-info">
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/tekhnokryak.jpg"
+                alt="Технокряк"
+              />
+              <h2 class="portfolio-title">Технокряк</h2>
+              <p class="portfolio-text">Веб-сайт</p>
+            </article>
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/poster.jpg"
+                alt="Постер New Orlean vs Golden Star"
+              />
+              <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+              <p class="portfolio-text">Дизайн</p>
+            </article>
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/restoraunt.jpg"
+                alt="Ресторан Seafood"
+              />
+              <h2 class="portfolio-title">Ресторан Seafood</h2>
+              <p class="portfolio-text">Додаток</p>
+            </article>
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/project.jpg"
+                alt="Проєкт Prime"
+              />
+              <h2 class="portfolio-title">Проект Prime</h2>
+              <p class="portfolio-text">Маркетинг</p>
+            </article>
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/boxes.jpg"
+                alt="Проєкт Boxes"
+              />
+              <h2 class="portfolio-title">Проєкт Boxes</h2>
+              <p class="portfolio-text">Додаток</p>
+            </article>
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/inspiration.jpg"
+                alt="Inspiration has no Borders"
+              />
+              <h2 class="portfolio-title">Inspiration has no Borders</h2>
+              <p class="portfolio-text">Веб-сайт</p>
+            </article>
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/limited.jpg"
+                alt="Видання Limited Edition"
+              />
+              <h2 class="portfolio-title">Видання Limited Edition</h2>
+              <p class="portfolio-text">Дизайн</p>
+            </article>
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/lab.jpg"
+                alt="Проєкт LAB"
+              />
+              <h2 class="portfolio-title">Проєкт LAB</h2>
+              <p class="portfolio-text">Маркетинг</p>
+            </article>
+            <article class="portfolio-info-card">
+              <img
+                class="portfolio-picture"
+                src="../img/portfolio/growing.jpg"
+                alt="Growing Business"
+              />
+              <h2 class="portfolio-title">Growing Business</h2>
+              <p class="portfolio-text">Додаток</p>
+            </article>
+          </div>
         </section>
       </div>
     </main>
