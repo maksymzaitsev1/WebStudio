@@ -46,6 +46,7 @@ body {
   justify-content: space-between;
   align-items: center;
   column-gap: 50px;
+  margin: auto;
 }
 .hero {
   background-color: #2f303a;
@@ -75,6 +76,9 @@ body {
   background-color: #2196f3;
   color: #ffffff;
 }
+.hero-button:hover {
+  color: #212121;
+}
 .features {
   padding-top: 94px;
   padding-bottom: 118px;
@@ -95,7 +99,9 @@ body {
   font-size: 14px;
   color: #757575;
 }
-.work {
+.worker-name {
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 .work-title {
   font-weight: 700;
@@ -149,10 +155,10 @@ body {
 }
 /* portfolio */
 .portfolio {
-  max-width: 1170px;
 }
 .nav-menu {
 }
+
 .header-contact-link {
   color: #757575;
 }
@@ -173,6 +179,10 @@ body {
   font-size: 16px;
   color: #212121;
 }
+.portfolio-filter:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
 .portfolio-info {
   display: flex;
   flex-wrap: wrap;
@@ -192,6 +202,7 @@ body {
   line-height: 2;
   font-size: 18px;
   color: #212121;
+  padding-top: 20px;
 }
 .portfolio-text {
   font-weight: 400;
@@ -206,9 +217,12 @@ body {
 .contact-adress {
   font-size: 14px;
 }
+.contact-link {
+  color: #757575;
+}
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
