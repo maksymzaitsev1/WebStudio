@@ -66,11 +66,16 @@ body {
   font-weight: 900;
   line-height: 1.36;
   font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
   width: 696px;
   text-align: center;
 }
 .hero-button {
+  border-radius: 4px;
+  padding: 10px 32px;
   font-size: 16px;
   font-weight: 700;
   background-color: #2196f3;
@@ -111,6 +116,7 @@ body {
   padding-bottom: 50px;
 }
 .work-pictures {
+  flex-basis: calc((100% - 30px) / 3);
   display: flex;
   unicode-bidi: isolate;
   column-gap: 30px;
@@ -128,6 +134,9 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
+}
+.team-worker {
+  flex-basis: calc((100% - 30px) / 4);
 }
 .team-title {
   font-weight: 700;
@@ -152,6 +161,10 @@ body {
   color: #ffffff;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-logo {
+  display: flex;
+  padding-bottom: 20px;
 }
 /* portfolio */
 .portfolio {
@@ -195,6 +208,7 @@ body {
   column-gap: 30px;
 }
 .portfolio-picture {
+  flex-basis: calc((100% - 30px) / 3);
   max-width: 100%;
 }
 .portfolio-title {
@@ -213,6 +227,7 @@ body {
 .contact-item {
   line-height: 1.71;
   font-size: 14px;
+  padding-bottom: 9px;
 }
 .contact-adress {
   font-size: 14px;
@@ -227,6 +242,9 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+img {
+  width: 100%;
 }
 
 .roboto-regular {
