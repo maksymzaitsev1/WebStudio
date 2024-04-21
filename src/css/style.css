@@ -88,6 +88,14 @@ body {
   padding-top: 94px;
   padding-bottom: 118px;
 }
+.features-img {
+  height: 120px;
+}
+.features-img::before {
+  display: inline-block
+  width: 24px;
+  height: 24px;
+}
 .features-list {
   display: flex;
   justify-content: space-between;
