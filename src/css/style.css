@@ -49,10 +49,18 @@ body {
   margin: auto;
 }
 .hero {
-  background-color: var(--colorBackgroundPrimary);
+  background-image: linear-gradient(
+      to right,
+      rgba(45, 46, 54, 0.4),
+      rgba(45, 46, 54, 0.4)
+    ),
+    url(../img/studio/background-hero.jpg);
   padding-top: 200px;
   padding-bottom: 280px;
   max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-container {
   display: flex;
