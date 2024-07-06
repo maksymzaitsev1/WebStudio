@@ -48,6 +48,13 @@ body {
   column-gap: 50px;
   margin: auto;
 }
+.cards-header {
+  padding-left: 318px;
+}
+.header-svg {
+  width: 16px;
+  height: 12px;
+}
 .hero {
   background-image: linear-gradient(
       to right,
@@ -194,10 +201,40 @@ body {
 }
 .icons-card {
   display: flex;
+  gap: 22px;
+  justify-content: center;
+  padding-bottom: 42px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 .card-svg {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
+}
+.regular-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--colorTextPrimary);
+  padding-top: 94px;
+}
+.customers-item {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 94px;
+  padding-top: 50px;
+}
+.customers-images {
+  width: 106px;
+  height: 60px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
 }
 .footer {
   font-weight: 400;
@@ -206,6 +243,38 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-accession {
+  padding-left: 70px;
+}
+.accession-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colorTextTertiary);
+  padding-bottom: 20px;
+}
+.accession-item {
+  display: flex;
+  gap: 12px;
+}
+.accession-images {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo,
+.footer-accession {
+  flex: 1;
+}
+
 .footer-logo {
   display: flex;
   padding-bottom: 20px;
