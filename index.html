@@ -48,26 +48,26 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contact">
-          <ul class="cards-header">
-            <li class="header-icon">
-              <svg class="header-svg">
-                <use href="./src/img/symbol-defs.svg#icon-emailcons"></use>
-              </svg>
+        <div class="header-contacts">
+          <ul class="header-contact">
+            <li class="header-contact-item">
+              <a class="header-contact-link" href="mailto:info@devstudio.com"
+                ><svg class="contact-icon-email contact-icon">
+                  <use href="./src/img/symbol-defs.svg#icon-emailcons"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contact-item">
+              <a class="header-contact-link" href="tel:+380961111111">
+                <svg class="contact-icon-tel contact-icon">
+                  <use href="./src/img/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-
-          <li class="header-contact-item">
-            <a class="header-contact-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact-item">
-            <a class="header-contact-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <!-- end menu -->
@@ -116,28 +116,49 @@
       </section>
       <!-- features end -->
       <!-- work -->
+
+      <!-- work 2-->
       <section class="work">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
-          <div class="work-pictures">
-            <img
-              class="work-img"
-              src="./src/img/studio/tablet.jpg"
-              alt="Десктопний комп'ютер"
-            />
-            <img
-              class="work-img"
-              src="./src/img/studio/mobile-phone.jpg"
-              alt="Мобільний телефон"
-            />
-            <img
-              class="work-img"
-              src="./src/img/studio/design-solutions.jpg"
-              alt="Дизайнерські рішення"
-            />
+
+          <div class="work-list">
+            <div class="image-container">
+              <img
+                class="work-img"
+                src="./src/img/studio/tablet.jpg"
+                alt="Десктопний комп'ютер"
+              />
+              <div class="overlay">
+                <span class="overlay-text">Десктопний комп'ютер</span>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <img
+                class="work-img"
+                src="./src/img/studio/mobile-phone.jpg"
+                alt="Мобільний телефон"
+              />
+              <div class="overlay">
+                <span class="overlay-text">Мобільний телефон</span>
+              </div>
+            </div>
+
+            <div class="image-container">
+              <img
+                class="work-img"
+                src="./src/img/studio/design-solutions.jpg"
+                alt="Дизайнерські рішення"
+              />
+              <div class="overlay">
+                <span class="overlay-text">Дизайнерські рішення</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <!-- work end -->
       <!-- team -->
       <section class="team">
@@ -153,24 +174,34 @@
               <p class="worker-position">Product Designer</p>
               <ul class="icons-card">
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use
+                        href="./src/img/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </article>
@@ -183,24 +214,34 @@
               <p class="worker-position">Frontend Developer</p>
               <ul class="icons-card">
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use
+                        href="./src/img/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </article>
@@ -210,24 +251,34 @@
               <p class="worker-position">Marketing</p>
               <ul class="icons-card">
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use
+                        href="./src/img/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </article>
@@ -240,24 +291,34 @@
               <p class="worker-position">UI Designer</p>
               <ul class="icons-card">
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use
+                        href="./src/img/symbol-defs.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="card-icon">
-                  <svg class="card-svg">
-                    <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
+                  <a class="card-link" href="#">
+                    <svg class="card-svg">
+                      <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </article>
@@ -269,39 +330,51 @@
           <h2 class="regular-title">Постійні клієнти</h2>
           <ul class="customers-item">
             <li class="customers-list">
-              <svg class="customers-images">
-                <use href="./src/img/symbol-defs.svg#icon-logo-01"></use>
-              </svg>
+              <a class="customers-card" href="#">
+                <svg class="customers-images">
+                  <use href="./src/img/symbol-defs.svg#icon-logo-01"></use>
+                </svg>
+              </a>
             </li>
 
             <li class="customers-list">
-              <svg class="customers-images">
-                <use href="./src/img/symbol-defs.svg#icon-logo-02"></use>
-              </svg>
+              <a class="customers-card" href="#">
+                <svg class="customers-images">
+                  <use href="./src/img/symbol-defs.svg#icon-logo-02"></use>
+                </svg>
+              </a>
             </li>
 
             <li class="customers-list">
-              <svg class="customers-images">
-                <use href="./src/img/symbol-defs.svg#icon-logo-03"></use>
-              </svg>
+              <a class="customers-card" href="#">
+                <svg class="customers-images">
+                  <use href="./src/img/symbol-defs.svg#icon-logo-03"></use>
+                </svg>
+              </a>
             </li>
 
             <li class="customers-list">
-              <svg class="customers-images">
-                <use href="./src/img/symbol-defs.svg#icon-logo-04"></use>
-              </svg>
+              <a class="customers-card" href="#">
+                <svg class="customers-images">
+                  <use href="./src/img/symbol-defs.svg#icon-logo-04"></use>
+                </svg>
+              </a>
             </li>
 
             <li class="customers-list">
-              <svg class="customers-images">
-                <use href="./src/img/symbol-defs.svg#icon-logo-05"></use>
-              </svg>
+              <a class="customers-card" href="#">
+                <svg class="customers-images">
+                  <use href="./src/img/symbol-defs.svg#icon-logo-05"></use>
+                </svg>
+              </a>
             </li>
 
             <li class="customers-list">
-              <svg class="customers-images">
-                <use href="./src/img/symbol-defs.svg#icon-logo-06"></use>
-              </svg>
+              <a class="customers-card" href="#">
+                <svg class="customers-images">
+                  <use href="./src/img/symbol-defs.svg#icon-logo-06"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -314,7 +387,10 @@
         <div class="footer-logocontact">
           <div class="footer-logo">
             <a href="#"
-              ><img class="logo" src="./src/img/logo.svg" alt="WebStudio"
+              ><img
+                class="logo"
+                src="./src/img/footer-logo.svg"
+                alt="WebStudio"
             /></a>
           </div>
           <div class="footer-contact">
@@ -341,24 +417,32 @@
           <h2 class="accession-title">приєднуйтесь</h2>
           <ul class="accession-item">
             <li class="accession-list">
-              <svg class="accession-images">
-                <use href="./src/img/symbol-defs.svg#icon-instagram"></use>
-              </svg>
+              <a class="card-link" href="#">
+                <svg class="accession-images">
+                  <use href="./src/img/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="accession-list">
-              <svg class="accession-images">
-                <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
-              </svg>
+              <a class="card-link" href="#">
+                <svg class="accession-images">
+                  <use href="./src/img/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="accession-list">
-              <svg class="accession-images">
-                <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
-              </svg>
+              <a class="card-link" href="#">
+                <svg class="accession-images">
+                  <use href="./src/img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="accession-list">
-              <svg class="accession-images">
-                <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
+              <a class="card-link" href="#">
+                <svg class="accession-images">
+                  <use href="./src/img/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
