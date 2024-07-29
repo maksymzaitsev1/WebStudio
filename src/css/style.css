@@ -45,6 +45,26 @@ img {
 .nav-link:hover {
   color: var(--colorHover);
 }
+.nav-link.current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(
+    --colorHover
+  ); /* Встановіть бажаний колір підкреслення */
+  margin-top: 4px;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link.current::after:hover {
+  position: absolute;
+  bottom: -28px; /* Розташування підкреслення нижче тексту */
+  left: 0;
+}
 .header-contact {
   display: flex;
   justify-content: space-between;
@@ -117,7 +137,7 @@ img {
   width: 696px;
   text-align: center;
 }
-.hero-button {
+.btn {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
@@ -127,8 +147,149 @@ img {
   color: #ffffff;
   border: none;
 }
-.hero-button:hover {
+.btn:hover {
   color: var(--colorTextPrimary);
+}
+.btn-info:hover .btn-svg {
+  fill: var(--colorHover);
+}
+.btn-info:hover {
+  color: var(--colorHover);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%);
+}
+.bth-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.btn-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--colorTextPrimary);
+  padding-top: 40px;
+}
+.btn-text-name {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--colorTextSecondary);
+  padding-top: 12px;
+  padding-bottom: 4px;
+  padding-left: 40px;
+}
+.btn-text {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--colorTextSecondary);
+  padding-bottom: 4px;
+  padding-left: 40px;
+}
+.btn-text-two {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: var(--colorTextSecondary);
+  padding-top: 20px;
+  padding-left: 77px;
+  margin: 0; /* Вирівнювання відступів */
+  font-size: 14px;
+  color: #333; /* Колір тексту */
+}
+.btn-pole {
+  padding-left: 40px;
+}
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Максимальна ширина для прикладу */
+  margin-bottom: 15px; /* Відступ між полями */
+}
+
+.image-dagger {
+  width: 11px;
+  height: 11px;
+  margin-top: 17px;
+  margin-left: 500px;
+}
+.btn-svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  /* fill: #888; */
+}
+
+.btn-writer,
+.btn-writer-two {
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* Відступи з урахуванням місця для іконки */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn-images:hover,
+.btn-writer:hover,
+.btn-writer-two:hover {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.btn-writer {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+}
+.btn-writer-two {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+}
+
+.sell-and-texts {
+  display: flex;
+  align-items: center;
+  padding-left: 77px;
+  padding-top: 20px;
+}
+.sell-two {
+  color: #2196f3;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.btn-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* Центрує елемент по горизонталі */
 }
 .features {
   padding-top: 94px;
@@ -348,6 +509,50 @@ img {
   display: flex;
   padding-bottom: 20px;
 }
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colorTextTertiary);
+  margin-bottom: 20px;
+}
+.footer-info {
+  margin-bottom: 20px;
+}
+.footer-writer {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+
+.footer-button {
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  margin-top: 35px;
+  margin-left: 12px;
+}
+.footer-svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--colorTextTertiary);
+}
 /* portfolio */
 .portfolio {
 }
@@ -392,6 +597,30 @@ img {
   column-gap: 30px;
   background: var(--colorTextTertiary);
   border: 1px solid var(--colorTextAdditional);
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background: blue; /* Блакитний напівпрозорий колір */
+  color: #fff; /* Білий колір тексту */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+}
+
+.overlay-text {
+  padding: 10px;
+}
+
+.portfolio-info-card:hover .overlay {
+  opacity: 1;
 }
 .portfolio-info-card:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),

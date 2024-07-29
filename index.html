@@ -36,7 +36,7 @@
         <nav class="header-nav">
           <ul class="nav-menu">
             <li class="nav-item">
-              <a class="nav-link" href="#">Студія</a>
+              <a class="nav-link current" href="#">Студія</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./src/pages/portfolio.html"
@@ -76,10 +76,89 @@
       <section class="hero">
         <div class="container hero-container">
           <h2 class="hero-title">Ефективні рішення для вашого бізнесу</h2>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="btn-open btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- end main head -->
+      <!-- modal window -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <div class="image-picture">
+            <ul class="list-image">
+              <li class="title-image">
+                <svg class="image-dagger">
+                  <use href="./src/img/symbol-defs.svg#icon-dagger"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <h2 class="btn-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <p class="btn-text-name">Ім'я</p>
+
+          <form class="btn-pole">
+            <div class="input-container">
+              <ul class="input-title">
+                <li class="input-list">
+                  <svg class="btn-svg">
+                    <use href="./src/img/symbol-defs.svg#icon-people"></use>
+                  </svg>
+                  <label class="btn-info" for="email" hidden>Ім'я</label>
+
+                  <input
+                    class="btn-writer"
+                    id="email"
+                    name="email"
+                    type="text"
+                  />
+                </li>
+              </ul>
+            </div>
+          </form>
+          <p class="btn-text">Телефон</p>
+          <form class="btn-pole">
+            <div class="input-container">
+              <svg class="btn-svg">
+                <use href="./src/img/symbol-defs.svg#icon-tel"></use>
+              </svg>
+              <label class="btn-info" for="phone" hidden>Телефон</label>
+              <input class="btn-writer" id="phone" name="phone" type="text" />
+            </div>
+          </form>
+          <p class="btn-text">Пошта</p>
+          <form class="btn-pole">
+            <div class="input-container">
+              <svg class="btn-svg">
+                <use href="./src/img/symbol-defs.svg#icon-em"></use>
+              </svg>
+              <label class="btn-info" for="email" hidden>Адреса</label>
+              <input class="btn-writer" id="email" name="email" type="text" />
+            </div>
+          </form>
+          <p class="btn-text">Коментар</p>
+          <form class="btn-pole">
+            <label class="btn-info-two" for="comment" hidden>Коментар</label>
+            <input
+              class="btn-writer-two"
+              id="comment"
+              name="comment"
+              type="text"
+              placeholder="Введіть текст"
+            />
+          </form>
+          <div class="sell-and-texts">
+            <p class="texts-one">
+              Погоджуюся з розсилкою та приймаю
+              <a class="sell-two" href="Умови договору">Умови договору</a>
+            </p>
+          </div>
+          <div class="btn-button">
+            <button class="btn-close btn" data-modal-close>Відправити</button>
+          </div>
+        </div>
+      </div>
+      <!-- end modal window -->
+
       <!-- features -->
       <section class="features">
         <div class="container">
@@ -446,8 +525,31 @@
             </li>
           </ul>
         </div>
+        <div class="footer-write">
+          <h2 class="footer-title">Підпишіться на розсилку</h2>
+          <form>
+            <label class="footer-info" for="email" hidden>Адреса</label>
+            <input
+              class="footer-writer"
+              id="email"
+              name="email"
+              type="text"
+              placeholder="E-mail"
+            />
+          </form>
+        </div>
+
+        <div class="button-footer">
+          <button class="footer-button">
+            Підписатися
+            <svg class="footer-svg">
+              <use href="./src/img/symbol-defs.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <!-- footer end -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
