@@ -87,9 +87,11 @@
           <div class="image-picture">
             <ul class="list-image">
               <li class="title-image">
-                <svg class="image-dagger">
-                  <use href="./src/img/symbol-defs.svg#icon-dagger"></use>
-                </svg>
+                <button class="button-close" data-modal-close>
+                  <svg class="image-dagger">
+                    <use href="./src/img/symbol-defs.svg#icon-dagger"></use>
+                  </svg>
+                </button>
               </li>
             </ul>
           </div>
@@ -147,13 +149,16 @@
             />
           </form>
           <div class="sell-and-texts">
+            <label>
+              <input type="checkbox" id="check" name="check" />
+            </label>
             <p class="texts-one">
               Погоджуюся з розсилкою та приймаю
               <a class="sell-two" href="Умови договору">Умови договору</a>
             </p>
           </div>
           <div class="btn-button">
-            <button class="btn-close btn" data-modal-close>Відправити</button>
+            <button class="btn-close btn">Відправити</button>
           </div>
         </div>
       </div>
@@ -208,8 +213,8 @@
                 src="./src/img/studio/tablet.jpg"
                 alt="Десктопний комп'ютер"
               />
-              <div class="overlay">
-                <span class="overlay-text">Десктопний комп'ютер</span>
+              <div class="portfolio-overlay">
+                <span class="portfolio-overlay-text">Десктопний комп'ютер</span>
               </div>
             </div>
 
