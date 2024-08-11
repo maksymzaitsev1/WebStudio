@@ -41,6 +41,8 @@ img {
 }
 .nav-link {
   color: var(--colorTextPrimary);
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
   color: var(--colorHover);
@@ -63,6 +65,8 @@ img {
 
 .nav-link {
   position: relative;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover::after {
@@ -91,6 +95,8 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-link:hover .contact-icon {
   fill: var(--colorHover);
@@ -104,6 +110,8 @@ img {
 }
 .contact-icon {
   fill: var(--colorTextSecondary);
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-icon-email {
   width: 16px;
@@ -145,6 +153,23 @@ img {
   color: #ffffff;
   width: 696px;
   text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.hero-title:hover {
+  animation: disappearReappear 0.5s ease-in-out;
+}
+
+@keyframes disappearReappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .btn {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -155,12 +180,19 @@ img {
   background-color: var(--colorHover);
   color: #ffffff;
   border: none;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover {
   color: var(--colorTextPrimary);
   transition-duration: 250ms;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.btn-info {
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .btn-info:hover .btn-svg {
   fill: var(--colorHover);
   transition-duration: 250ms;
@@ -189,6 +221,7 @@ img {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
+  transform: scale(1);
 }
 .modal {
   background-color: white;
@@ -267,6 +300,8 @@ img {
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
   /* fill: #888; */
 }
 
@@ -287,18 +322,25 @@ img {
   transition-duration: 250ms;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.btn-images {
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .btn-writer {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
   height: 40px;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-writer-two {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
   height: 120px;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sell-and-texts {
@@ -375,6 +417,12 @@ img {
   color: var(--colorTextPrimary);
   text-align: center;
   padding-bottom: 50px;
+
+  cursor: pointer;
+  transition: transform 3s ease-in-out;
+}
+.work-title:hover {
+  transform: skew(20deg, 10deg); /* Викривлення заголовка по осі X і Y */
 }
 .work-pictures {
   flex-basis: calc((100% - 30px) / 3);
@@ -410,6 +458,21 @@ img {
   color: var(--colorTextPrimary);
   text-align: center;
   padding-bottom: 50px;
+
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+.team-title:hover {
+  animation: rotate 0.5s ease-in-out forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* Повне обертання на 360 градусів */
+  }
 }
 .worker-name {
   padding-top: 30px;
@@ -440,11 +503,15 @@ img {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-svg {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-link:hover {
   background-color: var(--colorHover);
@@ -463,6 +530,21 @@ img {
   text-align: center;
   color: var(--colorTextPrimary);
   padding-top: 94px;
+
+  cursor: pointer;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: spin 2s cubic-bezier(0.4, 0, 0.2, 1) 1;
 }
 .customers-item {
   display: flex;
@@ -479,11 +561,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-images {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list:hover {
   border-color: var(--colorHover);
@@ -525,6 +611,8 @@ img {
   justify-content: center;
   align-items: center;
   fill: green;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accession-images {
   width: 20px;
@@ -621,6 +709,8 @@ img {
   font-size: 16px;
   color: var(--colorTextPrimary);
   border: none;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-filter:hover {
   background-color: #2196f3;
@@ -644,6 +734,8 @@ img {
   border: 1px solid var(--colorTextAdditional);
   position: relative;
   overflow: hidden;
+  transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .image-container {
@@ -662,17 +754,20 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2195f3aa; /* Блакитний напівпрозорий колір */
-  color: #fff; /* Білий колір тексту */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(33, 149, 243, 0.9); /* Блакитний напівпрозорий колір */
+
+  transition-property: bottom;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-overlay-text {
-  padding: 10px;
+  padding: 63px 24px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-info-card:hover .portfolio-overlay,

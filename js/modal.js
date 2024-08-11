@@ -13,3 +13,12 @@ const toggleModal = () => {
 
 refs.openModalBtn.addEventListener("click", toggleModal);
 refs.closeModalBtn.addEventListener("click", toggleModal);
+
+document.querySelector(".regular-title").addEventListener("click", function () {
+  const title = this;
+  title.classList.add("rotate");
+
+  title.addEventListener("animationend", () => {
+    title.classList.remove("rotate");
+  });
+});
